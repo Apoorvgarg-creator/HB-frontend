@@ -57,7 +57,9 @@ export default function Home() {
         <CardTitle>Find Like-Minded People</CardTitle>
       </CardHeader>
       <CardContent>
-        <p>Discover and connect with people who share your hobbies and interests effortlessly.</p>
+        <p>Discover and connect with people who share your hobbies and interests effortlessly.
+          fafafd
+        </p>
       </CardContent>
     </Card>
     <Card className="w-[350px] ">
