@@ -52,40 +52,89 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-between">
+          <Card className="w-[350px] ">
+            <CardHeader>
+              <CardTitle>Find Like-Minded People</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>Discover and connect with people who share your hobbies and interests effortlessly.</p>
+            </CardContent>
+          </Card>
+          <Card className="w-[350px] ">
+            <CardHeader>
+              <CardTitle>Group Activities & Events</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>Plan, join, and participate in group activities or hobby-based events near you.</p>
+            </CardContent>
+          </Card>
+          <Card className="w-[350px] ">
+            <CardHeader>
+              <CardTitle>Seamless Chat & Messaging</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>Chat instantly with hobby buddies, share ideas, and plan meetups easily.</p>
+            </CardContent>
+          </Card>
+          <Card className="w-[350px] ">
+            <CardHeader>
+              <CardTitle>Personalized Hobby Suggestions</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>Get AI-powered recommendations for hobbies and groups based on your interests.</p>
+            </CardContent>
+          </Card>
+        </div>
+        <div className="flex">
+          <div className="grow self-center"><p className="text-white  text-xl text-center">Testimonal 1 <br />
+            -Apoorv Garg
+          </p></div>
+
+          <Image src={landingPagePic} alt="for screen reader" width={200} height={200} />
+        </div>
+        <div className="flex">
+          <Image src={landingPagePic} alt="for screen reader" width={200} height={200} />
+          <div className="grow self-center"><p className="text-white  text-xl text-center">Testimonal 2 <br />
+            -Apoorv Garg
+          </p>
+          </div>
+        </div>
+        <div className="flex justify-between">
+        <Card className="w-[350px] h-[400px]">
+          <CardHeader>
+            <CardTitle>Find Like-Minded People</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p>Discover and connect with people who share your hobbies and interests effortlessly.</p>
+          </CardContent>
+        </Card>
         <Card className="w-[350px] ">
-      <CardHeader>
-        <CardTitle>Find Like-Minded People</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <p>Discover and connect with people who share your hobbies and interests effortlessly.</p>
-      </CardContent>
-    </Card>
-    <Card className="w-[350px] ">
-      <CardHeader>
-        <CardTitle>Group Activities & Events</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <p>Plan, join, and participate in group activities or hobby-based events near you.</p>
-      </CardContent>
-    </Card>
-    <Card className="w-[350px] ">
-      <CardHeader>
-        <CardTitle>Seamless Chat & Messaging</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <p>Chat instantly with hobby buddies, share ideas, and plan meetups easily.</p>
-      </CardContent>
-    </Card>
-    <Card className="w-[350px] ">
-      <CardHeader>
-        <CardTitle>Personalized Hobby Suggestions</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <p>Get AI-powered recommendations for hobbies and groups based on your interests.</p>
-      </CardContent>
-    </Card>
+          <CardHeader>
+            <CardTitle>Group Activities & Events</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p>Plan, join, and participate in group activities or hobby-based events near you.</p>
+          </CardContent>
+        </Card>
+        <Card className="w-[350px] ">
+          <CardHeader>
+            <CardTitle>Seamless Chat & Messaging</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p>Chat instantly with hobby buddies, share ideas, and plan meetups easily.</p>
+          </CardContent>
+        </Card>
+        <Card className="w-[350px] ">
+          <CardHeader>
+            <CardTitle>Personalized Hobby Suggestions</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p>Get AI-powered recommendations for hobbies and groups based on your interests.</p>
+          </CardContent>
+        </Card>
         </div>
       </div>
+
     </div>
   );
 }
