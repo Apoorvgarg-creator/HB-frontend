@@ -5,8 +5,9 @@ import TextRevealByWord from "@/components/ui/text-reveal";
 import { NavigationBar } from "@/components/navigation-bar";
 import Image from "next/image";
 import landingPagePic from "../../public/4500168.webp";
+import { Icon } from '@iconify/react';
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -14,17 +15,17 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
-
+} from "@/components/ui/select";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   const router = useRouter();
@@ -57,7 +58,10 @@ export default function Home() {
               <CardTitle>Find Like-Minded People</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Discover and connect with people who share your hobbies and interests effortlessly.</p>
+              <p>
+                Discover and connect with people who share your hobbies and
+                interests effortlessly.
+              </p>
             </CardContent>
           </Card>
           <Card className="w-[350px] ">
@@ -65,7 +69,10 @@ export default function Home() {
               <CardTitle>Group Activities & Events</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Plan, join, and participate in group activities or hobby-based events near you.</p>
+              <p>
+                Plan, join, and participate in group activities or hobby-based
+                events near you.
+              </p>
             </CardContent>
           </Card>
           <Card className="w-[350px] ">
@@ -73,7 +80,10 @@ export default function Home() {
               <CardTitle>Seamless Chat & Messaging</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Chat instantly with hobby buddies, share ideas, and plan meetups easily.</p>
+              <p>
+                Chat instantly with hobby buddies, share ideas, and plan meetups
+                easily.
+              </p>
             </CardContent>
           </Card>
           <Card className="w-[350px] ">
@@ -81,60 +91,100 @@ export default function Home() {
               <CardTitle>Personalized Hobby Suggestions</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>Get AI-powered recommendations for hobbies and groups based on your interests.</p>
+              <p>
+                Get AI-powered recommendations for hobbies and groups based on
+                your interests.
+              </p>
             </CardContent>
           </Card>
         </div>
         <div className="flex">
-          <div className="grow self-center"><p className="text-white  text-xl text-center">Testimonal 1 <br />
-            -Apoorv Garg
-          </p></div>
+          <div className="grow self-center">
+            <p className="text-white  text-xl text-center">
+              Testimonal 1 <br />
+              -Apoorv Garg
+            </p>
+          </div>
 
-          <Image src={landingPagePic} alt="for screen reader" width={200} height={200} />
+          <Image
+            src={landingPagePic}
+            alt="for screen reader"
+            width={200}
+            height={200}
+          />
         </div>
         <div className="flex">
-          <Image src={landingPagePic} alt="for screen reader" width={200} height={200} />
-          <div className="grow self-center"><p className="text-white  text-xl text-center">Testimonal 2 <br />
-            -Apoorv Garg
-          </p>
+          <Image
+            src={landingPagePic}
+            alt="for screen reader"
+            width={200}
+            height={200}
+          />
+          <div className="grow self-center">
+            <p className="text-white  text-xl text-center">
+              Testimonal 2 <br />
+              -Apoorv Garg
+            </p>
           </div>
         </div>
-        <div className="flex justify-between">
-        <Card className="w-[350px] h-[400px]">
-          <CardHeader>
-            <CardTitle>Find Like-Minded People</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p>Discover and connect with people who share your hobbies and interests effortlessly.</p>
-          </CardContent>
-        </Card>
-        <Card className="w-[350px] ">
-          <CardHeader>
-            <CardTitle>Group Activities & Events</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p>Plan, join, and participate in group activities or hobby-based events near you.</p>
-          </CardContent>
-        </Card>
-        <Card className="w-[350px] ">
-          <CardHeader>
-            <CardTitle>Seamless Chat & Messaging</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p>Chat instantly with hobby buddies, share ideas, and plan meetups easily.</p>
-          </CardContent>
-        </Card>
-        <Card className="w-[350px] ">
-          <CardHeader>
-            <CardTitle>Personalized Hobby Suggestions</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p>Get AI-powered recommendations for hobbies and groups based on your interests.</p>
-          </CardContent>
-        </Card>
+        <div className="flex justify-center ">
+          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-white text-center">
+            Subscription Plans
+          </h1>
+        </div>
+        <div className="flex justify-center">
+        <Card className="w-[350px] m-4">
+            <CardHeader>
+              <CardTitle>Features</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+                Get AI-powered recommendations for hobbies and groups based on
+                your interests.
+              </p>
+              <Separator/>
+              <p>
+                Get AI-powered recommendations for hobbies and groups based on
+                your interests.
+              </p>
+              <Separator />
+            </CardContent>
+          </Card>
+          <Card className="w-[200px] m-4">
+            <CardHeader>
+              <CardTitle>Free Plan</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p>
+              ✅
+              </p>
+              <Separator/>
+              <p>
+              ✅
+              </p>
+              <Separator />
+              
+            </CardContent>
+          </Card>
+          <Card className="w-[200px] m-4">
+            <CardHeader>
+              <CardTitle>Pro Plan</CardTitle>
+            </CardHeader>
+            <CardContent>
+            {/* <iconify-icon ></iconify-icon> */}
+              <Icon icon="ic:baseline-check-circle-outline" width="24" height="24"/>
+              <Separator/>
+              <p>
+                Get AI-powered recommendations for hobbies and groups based on
+                your interests.
+              </p>
+              <Separator />
+              
+            </CardContent>
+          </Card>
+          
         </div>
       </div>
-
     </div>
   );
 }
